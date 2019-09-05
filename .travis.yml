@@ -21,16 +21,15 @@ after_success:
   - docker push jandresdocker/multi-server
   - docker push jandresdocker/multi-worker
 
-  deploy:
+deploy:
   provider: elasticbeanstalk
-  region: us-east-2
+  region: eu-central-1
   app: multi-docker
   env: MultiDocker-env
-  bucket_name: elasticbeanstalk-us-east-2-206534977572
+  bucket_name: elasticbeanstalk-eu-central-1-448743904882
   bucket_path: docker-multi
   on:
     branch: master
-  access_key_id:
-  secure: $AWS_ACCESS_KEY
+  access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-  secure: $AWS_SECRET_KEY
+    secure: $AWS_SECRET_KEY
