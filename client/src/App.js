@@ -12,8 +12,9 @@ class App extends Component {
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Fibonacci Calculator with Travis CI</h1>
-            <h3>Feature Branch</h3>
+            <h1 className="App-title">
+              Fibonacci Calculator with Travis CI feature branch
+            </h1>
             <Link to="/">Home</Link>
             <Link to="/otherpage"> Other Page</Link>
           </header>
